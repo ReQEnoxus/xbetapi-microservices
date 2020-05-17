@@ -1,0 +1,17 @@
+server:
+  port: 80
+zuul:
+  routes:
+    matches:
+      path: /api/matches/**
+      serviceId: matches-service
+    comments:
+      path: /api/comments/**
+      serviceId: comments-service
+
+spring:
+  application:
+    name: xbetapi-gateway
+eureka:
+  client:
+    service-url.default: http://localhost:8761/eureka
