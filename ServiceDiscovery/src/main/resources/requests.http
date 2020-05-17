@@ -1,0 +1,7 @@
+GET http://localhost/api/comments/326053
+
+###
+
+GET http://localhost/api/matches/search?query=&date=2020-04-18&page=0&size=10
+
+###
